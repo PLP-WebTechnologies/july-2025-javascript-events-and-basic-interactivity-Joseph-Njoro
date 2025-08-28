@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Web Demo</h1>
+    <button id="darkModeBtn">Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Counter / Button Game -->
+    <section id="counterSection">
+      <h2>Click Counter</h2>
+      <p>Count: <span id="counter">0</span></p>
+      <button id="incrementBtn">Click Me!</button>
+    </section>
+
+    <!-- Collapsible FAQ -->
+    <section id="faqSection">
+      <h2>FAQ</h2>
+      <div class="faq">
+        <button class="faq-question">What is this page?</button>
+        <p class="faq-answer">This is a demo interactive webpage using JS!</p>
+      </div>
+      <div class="faq">
+        <button class="faq-question">Why use JS?</button>
+        <p class="faq-answer">To make web pages dynamic and engaging.</p>
+      </div>
+    </section>
+
+    <!-- Form Validation -->
+    <section id="formSection">
+      <h2>Sign Up Form</h2>
+      <form id="signupForm" novalidate>
+        <label>
+          Name:
+          <input type="text" id="name" placeholder="Your Name" required>
+          <span class="error" id="nameError"></span>
+        </label><br>
+
+        <label>
+          Email:
+          <input type="email" id="email" placeholder="you@example.com" required>
+          <span class="error" id="emailError"></span>
+        </label><br>
+
+        <label>
+          Password:
+          <input type="password" id="password" placeholder="Password" required>
+          <span class="error" id="passwordError"></span>
+        </label><br>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formSuccess" style="color:green;"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
